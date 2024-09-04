@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_call"
+        android:checkable="true"
+        android:enabled="false"
+        android:icon="@drawable/ic_call"
+        android:title="Llamar"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Ajustes"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/ic_screen_rotation"
+        android:title="Más opciones"
+        android:orderInCategory="100"
+        android:menuCategory="secondary"
+        app:showAsAction="never|withText">
+        <menu>
+            <item
+                android:id="@+id/action_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Salir"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_sub_settings"
+                android:icon="@drawable/ic_screen_rotation"
+                android:title="Ajustar"
+                app:showAsAction="never |withText" />
+        </menu>
+    </item>
+
+</menu>
